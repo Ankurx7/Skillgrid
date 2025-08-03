@@ -22,7 +22,7 @@ exports.resetPasswordToken = async (req, res) => {
       },
       { new: true }
     )
-    const url = `http://localhost:3000/update-password/${token}`
+    const url = `https://skillgrid1.vercel.app/${token}`
 
     await mailSender(
       email,
